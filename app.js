@@ -7,6 +7,7 @@ require("./db/conn")
 const register=require("./models/register")
 const highlight=require("./models/highlight")
 //////////////////////////////////////////////////////////////////////
+require('dotenv').config()
 //session
 var session = require('express-session');
 app.use(session({
@@ -34,6 +35,6 @@ app.set('view engine','hbs');
 app.set("views","views");
 hbs.registerPartials("views/partials")
 
-app.listen(3000,()=>{
+app.listen(process.env.PORT||3000,()=>{
     console.log("started done ");
 }) 

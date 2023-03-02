@@ -1,6 +1,7 @@
 const mongoose=require("mongoose")
+require('dotenv').config()
 const highlight = require("../models/highlight")
-mongoose.connect("mongodb+srv://priyanshuair3850:Manu%403850@cluster0.zxskhh8.mongodb.net/test").then(()=>{
+mongoose.connect(process.env.MONGO_URL,{useNewUrlParser:true,useUnifiedTopology:true}).then(()=>{
           console.log("connection successful");
           // highlight.create([
           //           {

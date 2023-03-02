@@ -3,7 +3,7 @@ const register = require("../models/register")
 const highlight = require("../models/highlight")
 const route=express.Router()
 
-
+require('dotenv').config()
 
 route.get("/",async(req,res)=>{
     // res.send("this my message from routes page")
