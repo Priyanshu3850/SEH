@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+.h1con2 h1{
+          /* color: #7AA93C; */
+          /* color: #262626; */
+          color: #24262B;
+          font-family: 'Lobster', cursive;
+}
+.h1con2{
+          text-align: center;
+          align-items: center;
+}
+
+.subcon21{
+          display:flex;
+          flex-wrap: wrap;
+          padding: 1rem;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content:space-evenly;
+
+}
+
+.seccard1 img{
+          height: 50%;
+          width: 50%;
+}
+
+.seccard1{
+          text-align: center;
+
+}
+
+.sectitlecard1{
+          text-align: center;
+}
+
+.secbtncard1{
+          text-align: center;
+          
+}
+
+.card1{
+          /* text-align: center; */
+          margin: 1rem;
+          border: 2px;
+          border-style: solid;
+          border-radius: 5px;
+          border-color:#ffffff00;
+          /* box-shadow: 10px; */
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          padding: 0.5rem;
+          width: 25vw;
+          background-color: #fff;
+}
+
+.card1btn:hover{
+          background-color:#24262B;
+}
+.card1btn:hover a{
+          color: #eddc5e;
+}
+
+.card1btn a{
+          text-decoration: none;
+          color:#24262B;
+}
+
+.card1btn{
+          border: 2px;
+          border-style: solid;
+          border-color: rgba(0, 0, 0, 0);
+          box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+          background-color: #eddc5e;
+          border-radius: 5px;
+          padding:0.3rem;
+          transition: all 0.5s ease;
+}

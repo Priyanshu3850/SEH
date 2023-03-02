@@ -1,0 +1,53 @@
+.navbarcss{
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    /* background-color: rgba(255, 255, 255, .2); */
+    /* background-color: rgba(37, 36, 36, 0.753); */
+    /* background-color: #262626; */
+    background-color: #24262B;
+    width: 100vw;
+    /* align-items: center; */
+    /* text-align: center; */
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+};
+.navbar-nav{
+    /* font-size: 2px; */
+    padding: 2px;
+}
+.navacon{
+    /* margin:auto; */
+    margin-left: auto;
+    text-align: center;
+}
+
+.navcon:hover{
+    color: #24262B;
+    background-color: #eddc5e;
+}
+
+.navcon{
+    color: #eddc5e;
+    text-decoration: none;
+    padding: 0.3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    border: 2px;
+    border-style: solid;
+    border-color: #00000000;
+    border-radius: 5px;
+    background-color: #eddc5e00;
+}
+
+
+
+.navbar-light .navbar-brand{
+    color: #7AA93C;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-stretch:extra-expanded;
+    font-size: 2rem;
+    padding: 0rem;
+}

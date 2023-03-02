@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500&display=swap');
+
+*{
+          font-family: 'Roboto Slab', serif;
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          text-transform: capitalize;
+          outline: none;
+          border: none;
+          text-decoration: none;
+          transition: all .2s linear;
+}
+
+
+body{
+          background-attachment:fixed;
+          background-size:100%;
+          background-repeat: no-repeat;
+
+}
+
+.container-1{
+          text-align: center;
+          background-image: url("/image/hom.jpg");
+          background-attachment: fixed;
+          height: 100vh;
+          width: 100vw;
+          background-size: cover;
+          align-items: center;
+}
+.bgblack{
+          height: 100vh;
+          width: 100vw;
+          background-color: rgba(0, 0, 0, 0.366);
+}
+.lrbtn{
+          padding-top: 5rem;
+          width: 50vw;
+          text-align: center;
+          align-items: center;
+          display: flex;
+          /* -ms-flex-align: center; */
+          /* -ms-flex-item-align: center; */
+          
+          /* flex-wrap: wrap; */
+}
+.desc{
+          /* margin-top:rem; */
+          padding-top: 13rem;
+          padding: auto;
+
+          padding-left: 5vw;
+          padding-right: 40vw;
+          color: white;
+          display: flex;
+          text-align: center;
+          align-items: center;
+          width: 100vw;
+          height: 50vh;
+          display: flex;
+}
+/* .loginbtn:hover{
+          background-color: rgb(95, 213, 95);
+} */
+.anchorloginbtn{
+          text-decoration: none;
+          /* color: black; */
+          /* color:black; */
+          color:#24262B;
+}
+
+.loginbtn:hover{
+          background-color:#24262B;
+}
+.loginbtn:hover a{
+          color: #EDDD5E;
+}
+.loginbtn a:hover{
+          color: #EDDD5E;
+}
+.loginbtn{
+          /* margin-top: 8rem; */
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          border: 2px;
+          border-radius: 2px;
+          border-color: rgba(0, 0, 0, 0);
+          border-style: solid;
+          margin: 2rem;
+          /* background-color: #2fcc4a; */
+          /* background: #00000000; */
+          border-radius: 5px;
+          transition: all 0.5s ease;
+          background-color: #EDDD5E;
+}
+#register1{
+          padding: 0.5rem;
+          margin-left: 5vw;
+}
+#loginbtn1{
+          padding: 0.5rem;
+          padding-left: 0.9rem;
+          padding-right: 0.9rem;
+          margin-right: 6rem;
+          margin-left: 18vw;
+          /* background: #EDDD5E; */
+}
+.navbar{
+          /* margin-top:0rem; */
+          padding-top: 0rem;
+          padding-bottom: 0rem;
+}
+
+/* container2 ke subcon21 ke card ki css */
+.container2{
+          background-color: #F5F0E9;
+}

@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="css/highprod.css">
+<div class="h1con2">
+            <br>
+          <h1>our highlighted products</h1>
+</div>
+<div class="subcon21">
+        {{#each high}}
+        <div class="card1">
+          <section class="seccard1">
+          <img src="{{this.imgurl}}" alt="no img">
+          </section><br>
+          <section class="sectitlecard1">
+          <h5>{{this.title}}</h5>
+          </section><br>
+          <p>{{this.description}}</p>
+          <section class="secbtncard1">
+            <button class="card1btn"><a href="{{this.onclick}}">Check Out</a></button>
+          </section>
+        </div>
+        {{/each}}
+</div>

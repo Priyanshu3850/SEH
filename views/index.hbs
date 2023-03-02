@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{!-- cdn links --}}
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <title>SEH</title>
+  </head>
+  <body>
+      <div class="navbar">
+        {{>navbar}}
+      </div>
+    <div class="container-1" id="cont1">
+      <div class="bgblack">
+      <div class="desc">
+        <h3>"Welcome to our farming equipment website where you can find the best tools and machinery for your agricultural needs."</h3>
+      </div>
+      <div class="lrbtn">
+        {{#if flag }}
+        
+        {{else}}
+        <button class="loginbtn" id="loginbtn1"><a class="anchorloginbtn" href="/login">LOGIN</a></button>
+        <button class="loginbtn" id="register1" ><a class="anchorloginbtn" href="/register">REGISTER</a></button>
+        {{/if}}
+        </div>
+
+      </div>
+    </div>
+    <div class="container2" id="cont2">
+      {{>highprod}}
+    </div>
+    <div class="footer1" id="footer">
+      {{>footer}}
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+  </body>
+</html>
