@@ -4,6 +4,7 @@ body {
           background-image: url("/image/homebg.jpg");
           background-size: 100%;
           font-family: 'Roboto', sans-serif;
+          /* margin-top: 12rem; */
 }
 .form-control, .form-control:focus, .input-group-addon {
           border-color: #e1e1e1;
@@ -15,6 +16,8 @@ border-radius: 3px;
           width: 390px;
           margin: 0 auto;
           padding: 30px 0;
+          /* align-items: center;
+          text-align: center; */
 }
 .signup-form form {
           color:#312828;
@@ -54,13 +57,16 @@ margin: 0 -30px 20px;
 .signup-form .btn{        
 font-size: 16px;
 font-weight: bold;
-          background: #19aa8d;
+    background: #eddc5e;
           border: none;
           min-width: 140px;
+              border-radius: 5px;
+    transition: all 0.5s ease;
 }
 .signup-form .btn:hover, .signup-form .btn:focus {
-          background: #179b81;
-outline: none;
+        color: #eddc5e;
+    background-color:#24262B;
+    outline: none;
 }
 .signup-form a {
           color: #fff;	

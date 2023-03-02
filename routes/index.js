@@ -2,8 +2,14 @@ const express=require("express")
 const register = require("../models/register")
 const highlight = require("../models/highlight")
 const route=express.Router()
-
 require('dotenv').config()
+
+// var user_status=false;
+
+// function(){
+
+// }
+
 
 route.get("/",async(req,res)=>{
     // res.send("this my message from routes page")
@@ -11,7 +17,7 @@ route.get("/",async(req,res)=>{
     const high=await highlight.find();
     // console.log(high);
     var flag=false;
-    if (req.session.auth){
+    if(req.session.auth){
         flag=true;
     }
     res.render("index",{
@@ -75,8 +81,8 @@ route.post("/login",async(req,res)=>{
         const checkemail=await register.findOne({email:email})
         //password validation
         if(checkemail.password===password){
-            sess=req.session;
-            sess.auth=checkemail;
+            // sess=req.session;
+            req.session.auth=checkemail;
             res.status(201).redirect('/');
 
             // res.status(201).render('index',{flag:true});
@@ -90,6 +96,13 @@ route.post("/login",async(req,res)=>{
         res.status(400).send(e)
     }
 })
+
+//definig logout
+route.get("/logout",(req,res)=>{
+    req.session.destroy();
+    res.redirect('/');
+})
+
 
 
 // trail
