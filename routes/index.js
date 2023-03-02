@@ -49,7 +49,7 @@ route.post("/register",async(req,res)=>{
             })
 
             const success_register=await register_user.save();
-            res.status(201).render("index");
+            res.status(201).render("login");
 
         }else{
 
